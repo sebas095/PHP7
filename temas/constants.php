@@ -17,7 +17,7 @@
   echo COLORES2[2];
   echo PHP_INT_MIN;
 
-  // Nuevasconstantes predefinidas en PHP7
+  // Nuevas constantes predefinidas en PHP7
   /*
     PHP_INT_MIN
     PHP_FLOAT_DIG
@@ -26,7 +26,7 @@
     PHP_FLOAT_MAX
     PHP_FD_SETSIZE
 
-    COnstantes que pueden redefinirse:
+    Constantes que pueden redefinirse:
     __LINE__
     __FILE__
     __DIR__
