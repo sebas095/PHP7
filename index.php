@@ -1,12 +1,32 @@
 <?php
-  // foreach
-  $array = array(1, 2, 3, 4, 5);
+  $personas = array(
+    array("Amairani", "Lievano", 22),
+    array("Guiomar", "Cameras", 22),
+    array("Raquel", "Molina", 23),
+    array("Delia", "Gallegos", 46)
+  );
 
-  foreach ($array as &$value ) {
-    $value *= 2;
+  $fila = 3;
+  $columna = 1;
+  echo $personas[$fila][$columna];
+
+  for ($fila = 0; $fila < count($personas); $fila++) {
+    for ($columna = 0; $columna < count($personas[$fila]); $columna++) {
+      echo "Valor -> ".$personas[$fila][$columna]."\n";
+    }
   }
 
-  foreach ($array as $index => $value) {
-    echo "$index ... $valor";
+  $barcos = array(
+    'A' => array("nada", "nada", "Barco"),
+    'B' => array("nada", "nada", "nada"),
+    'C' => array("Barco", "nada", "nada"),
+    'D' => array("nada", "nada", "Barco")
+  );
+
+  echo $barcos['A'][2];
+  foreach ($barcos as $key => $value) {
+    for ($index = 0; $index < count($value); $index++) {
+      echo "Coordenadas -> $key - $index Valor -> $value[$indice]\n";
+    }
   }
 ?>
